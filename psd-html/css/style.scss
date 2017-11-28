@@ -1,0 +1,102 @@
+@import "../partials/setup";
+@import "../partials/typography";
+@import "../partials/button";
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700|Source+Sans+Pro:300,400,600,700');
+@import "../partials/header";
+@import "../partials/hamburger";
+@import "../partials/services";
+@import "../partials/whoWeAre";
+@import "../partials/whatWeDo";
+@import "../partials/statistics";
+@import "../partials/whatWeDid";
+@import "../partials/ourExperts";
+@import "../partials/reviews";
+@import "../partials/weAreBest";
+@import "../partials/trustedPartners";
+
+@import "../partials/footer";
+
+
+
+
+
+img {
+	max-width: 100%;
+}
+.wrapper {
+	max-width: 1170px;
+	margin: 0 auto;
+}
+a {
+	text-decoration: none;
+	color: #000;
+}
+ul {
+	margin: 0;
+	li {
+		list-style-type: none;
+	}
+}
+p {
+	@include mainParagraph();
+}
+h1 {
+	@include headingOne();
+}
+h3 {
+	@include headingThree();
+}
+h4 {
+	@include headingFour();
+}
+h5 {
+	@include headingFive();
+}
+.boldContent {
+	@include boldParagraph();
+}
+span.numberLarge {
+	@include numberLarge();
+}
+button {
+	@include button(#fff, #fff, #000);
+	//borderColor, textColor, hoverColor/hover border color
+}
+
+.sectionTitle {
+	margin: 0 auto;
+	padding: 100px 0;
+	text-align: center;
+	position: relative;
+	&::after {
+		content: '';
+		position: absolute;
+		bottom: 30%;
+		left: 50%;
+		border-bottom: 1px solid #999;
+		display: block;
+		width: 127px;
+		transform: translateX(-50%);
+	}
+}
+@media (max-width: 940px) {
+	.sectionTitle {
+		padding: 50px 0;
+		&::after {
+			bottom: 30px;
+		}
+	}
+}
+@media (max-width: 480px) {
+	.sectionTitle {
+		padding: 20px 0;
+		&::after {
+			bottom: 10px;
+		}
+	}
+}
+
+
+
+
+

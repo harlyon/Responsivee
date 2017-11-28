@@ -1,0 +1,155 @@
+// OUR EXPERTS SECTION 
+.ourExperts {
+	background-color: #f3f3f3;
+	padding-bottom: 120px;
+}
+.ourExperts--gallery {
+	display: flex;
+	max-width: 1140px;
+	margin: auto;
+	div {
+		position: relative;
+		margin-right: 3%;
+		figure {
+			img {
+				display: block;
+			}
+		}
+	}
+	div.lastExpert {
+		margin-right: 0;
+	}
+	figcaption {
+		position: absolute;
+		z-index: 10;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		background: rgba(0,0,0,0.7);
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		opacity: 0;
+		transition: 0.3s all ease;
+		h3 {
+			color: white;
+		}
+		h4 {
+			color: white;
+			letter-spacing: 0;
+			font-weight: 400;
+			margin: 5px 0 45px 0;
+		}
+		ul {
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			padding-left: 0;
+			li {
+				margin: 20px 10px;
+				a {
+					color: white;
+					padding: 10px 12px;
+					border: 2px solid white;
+					transition: 0.3s all ease;
+					&:hover {
+						background-color: white;
+						color: black;
+					}
+				}
+			}
+		}
+	}
+}
+.ourExperts--gallery figure img:hover,
+.ourExperts--gallery figcaption:hover {
+	opacity: 1;
+}
+@media (max-width: 940px) {
+	.ourExperts {
+		padding-bottom: 50px;
+		padding: 20px;
+		.ourExperts--gallery figcaption {
+			opacity: 1;
+			z-index: 10;
+			position: static;
+			background: none;
+			h3{
+				color: black;
+				padding-top: 10px;
+				letter-spacing: 3px;
+			}
+			h4 {
+				color: black;
+				margin: 0;
+			}
+			ul li {
+				margin: 10px 0;
+				a {
+					color: black;
+					border: 0;
+					padding: 0px 20px;
+					font-size: 25px;
+					&:hover {
+						background:none;
+					}
+			}
+		}
+	}
+}
+	.ourExperts--gallery-first {
+		margin-left: 30px;
+	}
+}
+@media (max-width: 768px) {
+	.ourExperts--gallery {
+		display: flex;
+		flex-direction: column;
+		figure img {
+			margin: 0 auto;
+		}
+		figcaption {
+			margin-bottom: 50px;
+		
+			h3 {
+				color: black;
+				padding-top: 10px;
+				letter-spacing: 3px;
+			}
+			h4 {
+				color: black;
+				margin: 0;
+			}
+			ul li {
+				margin: 10px 0;
+				a {
+					color: black;
+					border: 0;
+					padding: 0px 20px;
+					font-size: 25px;
+					&:hover {
+						background:none;
+					}
+			}
+		}
+	}	
+	.ourExperts--gallery-first {
+		margin: 0px;
+		}
+	}
+}
+@media (max-width: 480px) {
+	.ourExperts {
+		padding-bottom: 50px;
+		.ourExperts--gallery figcaption {
+			opacity: 1;
+			z-index: 10;
+			position: static;
+			background: none;
+			display: flex;
+			flex-direction: row;
+			}
+		}
+	}

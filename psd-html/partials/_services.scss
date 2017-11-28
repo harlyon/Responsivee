@@ -1,0 +1,36 @@
+
+// SERVICES SECTION
+.services {
+	display: flex;
+	div {
+		width: 25%;
+		padding: 3%;
+		border: 1px solid #e3e3e3;
+		border-right: 0;
+		h3 {
+			margin: 20px 0;
+		}
+	}
+}
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+	.services {
+		display: flex;
+		flex-wrap: wrap; 
+		div {
+			width: 50%;
+			border-top: 0;
+			h3 {
+				margin: 10px 0;
+			}
+		}
+	}	
+}
+@media (max-width: 480px) {
+	.services {
+		div {
+			width: 100%;
+		}
+	}
+}

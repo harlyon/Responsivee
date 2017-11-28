@@ -1,0 +1,91 @@
+// REVIEWS SECTION
+.reviews {
+	width: 100%;
+	max-width: 910px;
+	margin: 50px auto;
+	padding: 50px 0;
+	text-align: center;
+	div{
+		width: 100%;
+		span {
+			.icofont-quote-left {
+				color: #e0e0e0;
+				font-size: 55px;
+			}
+		}
+		p.boldContent {
+			padding: 60px 0 35px 0;
+		}
+		h3 {
+			padding: 50px 0 0 0; 
+		}
+		h4 {
+			margin: 0;
+		}
+	}
+}
+
+// REVIEWS SECTION - FLICKITY STYLES
+.main-carousel {
+	padding-top: 0;
+}
+.flickity-prev-next-button {
+	display: none;
+}
+.flickity-page-dots .dot {
+  width: 12px;
+  height: 12px;
+  opacity: 1;
+  background: #999;
+  border-radius: 0;
+}
+.flickity-page-dots {
+  bottom: 0px;
+}
+.flickity-page-dots .dot.is-selected {
+  background: black;
+}
+@media (max-width: 767px) {
+	.reviews {
+		div {
+			p.boldContent {
+				padding: 20px;
+			}
+			p {
+				padding: 0 25px;
+			}
+		}
+	}
+}
+
+
+
+@media (max-width: 480px) {
+	.reviews {
+		text-align: center;
+		// margin-top: 0;
+		// padding: 0 20px 30px 20px;
+		div{
+			margin: 10px auto;
+			span {
+				.icofont-quote-left {
+					color: #e0e0e0;
+					font-size: 55px;
+				}
+			}
+			p.boldContent {
+				padding: 20px;
+			}
+			p {
+				padding: 0 25px;
+			}
+			h3 {
+				padding: 50px 0 0 0; 
+			}
+			h4 {
+				margin: 0;
+			}
+		}
+	}
+
+}

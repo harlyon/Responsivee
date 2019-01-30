@@ -1,0 +1,137 @@
+// WE ARE BEST SECTION
+.weAreBest {
+	background-image: linear-gradient(rgba(3,3,3,0.4),rgba(3,3,3,0.4)), url(../assets/cat_bg.jpg);
+	background-position: bottom;
+	background-size: cover;
+	height: 60vh;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	div.wrapper {
+		max-width: 910px;
+		h3 {
+			color: #fff;
+			font-weight: 300;
+			letter-spacing: 15px;
+			margin: 0;
+		}
+		h5 {
+			font-size: 25px;
+			color: #fff;
+			font-weight: 600;
+			letter-spacing: 2px;
+			margin: 10px 0 0 0;
+		}
+		p {
+			color: #fff;
+			margin: 40px 0;
+			font-weight: 300;
+			letter-spacing: 1px;
+		}
+	}
+}
+@media (max-width: 940px) {
+	.weAreBest {
+	background-image: linear-gradient(rgba(3,3,3,0.4),rgba(3,3,3,0.4)), url(../assets/cat_bg.jpg);
+	background-position: bottom;
+	background-size: cover;
+	height: 60vh;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	div.wrapper {
+		// max-width: 910px;
+		padding: 0 50px;
+		h3 {
+			color: #fff;
+			font-weight: 300;
+			letter-spacing: 15px;
+			margin: 0;
+		}
+		h5 {
+			font-size: 25px;
+			color: #fff;
+			font-weight: 600;
+			letter-spacing: 2px;
+			margin: 10px 0 0 0;
+		}
+		p {
+			color: #fff;
+			margin: 40px 0;
+			font-weight: 300;
+			letter-spacing: 1px;
+		}
+	}
+}
+}
+@media (max-width: 768px) {
+	.weAreBest {
+	background-image: linear-gradient(rgba(3,3,3,0.4),rgba(3,3,3,0.4)), url(../assets/cat_bg.jpg);
+	background-position: bottom;
+	background-size: cover;
+	height: 60vh;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	div.wrapper {
+		max-width: 910px;
+		h3 {
+			color: #fff;
+			font-weight: 300;
+			letter-spacing: 15px;
+			margin: 0;
+		}
+		h5 {
+			font-size: 25px;
+			color: #fff;
+			font-weight: 600;
+			letter-spacing: 2px;
+			margin: 10px 0 0 0;
+		}
+		p {
+			color: #fff;
+			margin: 20px 0;
+			font-weight: 300;
+			letter-spacing: 1px;
+			padding: 20px 0;
+		}
+	}
+}
+}
+
+@media (max-width: 480px) {
+	.weAreBest {
+		background-image: linear-gradient(rgba(3,3,3,0.7),rgba(3,3,3,0.7)), url(../assets/cat_bg.jpg);
+		background-position: bottom;
+		background-size: cover;
+		height: 100vh;
+		text-align: center;
+		display: flex;
+		align-items: center;
+		div.wrapper {
+			max-width: 910px;
+			padding: 0 15px;
+			h3 {
+				color: #fff;
+				font-weight: 300;
+				letter-spacing: 5px;
+				font-size: 14px;
+				margin: 0;
+			}
+			h5 {
+				font-size: 25px;
+				color: #fff;
+				font-weight: 600;
+				letter-spacing: 2px;
+				margin: 0;
+			}
+			p {
+				color: #fff;
+				margin: 15px 0;
+				font-weight: 300;
+				letter-spacing: 1px;
+			}
+
+		}
+	}
+}

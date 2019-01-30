@@ -1,0 +1,173 @@
+
+// WHAT WE DO SECTION
+.whatWeDoTitle {
+	width: 100%;
+	background: #f7f7f7;
+	background: url(../assets/bg-pattern.jpg);
+	background-position: center;
+}
+.whatWeDo-services {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	div {
+		width: 50%;
+		img {
+			display: block;
+		}
+		article {
+			div {
+				width: 60%;
+			}
+		}
+	}
+}
+.whatWeDo-services-inner {
+	display: flex;
+	padding-left: 8%;
+	div {
+		h3 {
+			padding-bottom: 5%;
+			position: relative;
+			&::after {
+				content: '';
+				position: absolute;
+				bottom: 35%;
+				left: 0;
+				border-bottom: 1px solid #999;
+				display: block;
+				width: 50px;
+			}
+		}
+		button {
+			@include button(#999, #999, #000);
+			//borderColor, textColor, hoverColor/hover border color
+			margin-top: 5%;
+		}
+	}
+}
+.brandDesignArticle{
+	span {
+		padding-left: 100px;
+	}
+	div {
+		width: 100%;
+	}
+}
+@media (max-width: 940px) {
+	.whatWeDo-services div article div {
+		width: 100%;
+		padding-right: 15px;
+	}
+	.whatWeDo-services-inner {
+		span.numberLarge {
+		display: none;	
+		}
+	}
+}
+@media (max-width: 768px) {
+	.whatWeDo-services {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		div {
+			width: 100%;
+			img {
+				display: block;
+			}
+			article {
+				div {
+					width: 100%;
+				}
+			}
+		}
+		div:nth-child(1) {
+			order: 1;
+		}
+		div:nth-child(2) {
+			order: 2;
+		}
+		div:nth-child(3) {
+			order: 4;
+		}
+		div:nth-child(4) {
+			order: 3;
+		}
+		div:nth-child(5) {
+			order: 5;
+		}
+		div:nth-child(6) {
+			order: 6;
+		}
+	}
+	.whatWeDo-services-inner {
+		display: flex;
+		div {
+			padding: 20px;
+			h3 {
+				padding-bottom: 5%;
+				position: relative;
+				&::after {
+					content: '';
+					position: absolute;
+					bottom: 35%;
+					left: 0;
+					border-bottom: 1px solid #999;
+					display: block;
+					width: 50px;
+				}
+			}
+			button {
+				@include button(#999, #999, #000);
+				//borderColor, textColor, hoverColor/hover border color
+				margin-top: 5%;
+			}
+		}
+	}
+	.brandDesignArticle{
+		span {
+			padding-left: 0;
+		}
+		div {
+			width: 100%;
+		}
+	}
+	.whatWeDo-services-inner {
+		span.numberLarge {
+		display: block;
+		line-height: 60px;	
+		padding-left: 20px;
+		}
+	}
+}
+@media (max-width: 480px) {
+	.whatWeDo-services-inner {
+		display: flex;
+		padding-left: 0;
+		span.numberLarge {
+			display: none;	
+			}
+		}
+		.whatWeDo-services-inner div {
+
+			h3 {
+				padding-bottom: 5%;
+				position: relative;
+				&::after {
+					content: '';
+					position: absolute;
+					bottom: 5%;
+					left: 0;
+					border-bottom: 1px solid #999;
+					display: block;
+					width: 50px;
+				}
+			}
+			button {
+				@include button(#999, #999, #000);
+				//borderColor, textColor, hoverColor/hover border color
+				margin: 5% auto;
+
+			}
+		}
+	}

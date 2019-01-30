@@ -1,0 +1,20 @@
+@mixin button($borderColor, $textColor, $hoverColor) {
+	font-family: 'Source Sans Pro';	
+	font-size: 13px;
+	color: $textColor;
+	font-weight: 700;
+	border-color: $borderColor;
+	background: none;
+	letter-spacing: 2px;
+	text-align: center;
+	padding: 12px 30px;
+	border-width: 2px;
+	border-style: solid;
+	transition: 0.3s all ease;
+	&:hover {
+		background: rgba(255,255,255,0.4);
+		color: #000;
+		border-color: $hoverColor;
+		background-color: #fff;
+	}
+}

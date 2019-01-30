@@ -1,0 +1,122 @@
+// WHO WE ARE SECTION
+.whoWeAre {
+	.whoWeAre--content {
+		max-width: 1110px;
+		margin: auto;
+		display: flex;
+		.boldContent {
+			text-align: right;
+			padding-right: 30px;
+			color: #1f1f1f;
+			&::first-line {
+				text-decoration: underline;
+			}
+		}
+	}
+}
+.whoWeAre ul {
+	margin: 50px 0 0 40%;
+	flex-direction: column;
+	li {
+		@include mainParagraph();
+		i {
+			padding-right: 10px;
+			color: black;
+		}
+	}
+}
+@media (max-width: 940px) {
+	.whoWeAre {
+		.whoWeAre--content {
+			max-width: 1110px;
+			margin: auto;
+			display: flex;
+			padding: 20px;
+			.boldContent {
+				text-align: right;
+				padding-right: 30px;
+				color: #1f1f1f;
+				&::first-line {
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+	.whoWeAre ul {
+		margin: 30px 0 0 10%;
+
+		li {
+			@include mainParagraph();
+			i {
+				padding-right: 10px;
+			}
+		}
+	}
+}
+@media (max-width: 768px){
+	.whoWeAre {
+		.whoWeAre--content {
+			max-width: 1110px;
+			margin: auto;
+			display: flex;
+			flex-direction: column;
+			padding: 2	0px;
+			.boldContent {
+				text-align: center;
+				padding-bottom: 20px;
+				color: #1f1f1f;
+				&::first-line {
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+	.whoWeAre ul {
+		// margin: 50px 0 0 40%;
+		padding: 15px 0;
+
+		li {
+			@include mainParagraph();
+			i {
+				padding-right: 10px;
+			}
+		}
+	}
+}
+
+@media (max-width: 480px){
+	.whoWeAre {
+		.whoWeAre--content {
+			max-width: 1110px;
+			margin: auto;
+			display: flex;
+			flex-direction: column;
+			.boldContent {
+				text-align: left;
+				padding: 0 0 20px 0;
+				color: #1f1f1f;
+				font-size: 16px;
+				&::first-line {
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+	.whoWeAre ul {
+		// margin: 50px 0 0 40%;
+		padding: 15px 0;
+		flex-direction: column;
+		li {
+			@include mainParagraph();
+			padding-right: 20px;
+			i {
+				padding-right: 10px;
+			}
+		}
+	}
+	.whoWeAre .sectionTitle {
+		h5{
+			font-size: 22px;
+		}
+	}
+}

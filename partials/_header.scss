@@ -1,0 +1,123 @@
+
+// HEADER SECTION
+header {
+	background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(../assets/hero.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 90vh;
+	display: flex;
+	flex-direction: column;
+	div {
+		nav {
+			display: flex;
+			justify-content: space-between;
+			i.icofont-navigation-menu {
+					padding-right: 30px;
+					color: white;
+				}
+			ul {
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+				padding: 0;
+				li {
+					margin-right: 20px;
+					
+					a {
+						@include headingSix(#fff);
+						padding-bottom: 5px;
+						font-weight: 300;
+						transition: 0.3s all ease;
+						border-bottom: 2px solid transparent;
+						&:hover {
+							border-bottom: 2px solid white;
+						}
+					}
+					a.logo {
+						&:hover {
+							border: none;
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	div.heroContent {
+		text-align: center;
+		margin: auto;
+		h3 {
+			color: white;
+			letter-spacing: 20px;
+			font-weight: 400;
+			margin: 15px 0;
+		}
+		button {
+			margin-top: 15px;
+		}
+	}
+}
+
+@media (max-width: 480px) {
+	header {
+		background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(../assets/hero.jpg);
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		height: 90vh;
+		display: flex;
+		flex-direction: column;
+		div {
+			nav {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				i.icofont-navigation-menu {
+					padding-right: 30px;
+					color: white;
+				}
+				ul {
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					padding: 0;
+					li {
+						margin-right: 20px;
+						a {
+							@include headingSix(#fff);
+							padding-bottom: 5px;
+							transition: 0.3s all ease;
+							&:hover {
+								border-bottom: 2px solid white;
+							}
+						}
+						a.logo {
+							// flex-grow: 1 1 auto;
+							&:hover {
+								border: none;
+							}
+						}
+					}
+				}
+			}
+		}
+		
+		div.heroContent {
+			text-align: center;
+			margin: auto;
+			h3 {
+				color: white;
+				letter-spacing: 8px;
+				font-weight: 300;
+				margin: 15px 0;
+			}
+			h1 {
+				font-size: 20px;
+			}
+			button {
+				margin-top: 15px;
+			}
+		}
+	}
+}
